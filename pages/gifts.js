@@ -48,12 +48,11 @@ export default function Home() {
     <div>
       <Head>
         <title>OpenAI Quickstart</title>
-        <link rel="icon" href="/dog.png" />
       </Head>
 
       <main className={styles.main}>
         <img src="/dog.png" className={styles.icon} />
-        <h3>Christmas gift generator 🎁</h3>
+        <h3>Christmas Gift Ideas 🎁</h3>
         <form onSubmit={onSubmit}>
           <label>For who is the gift?</label>
           <select
