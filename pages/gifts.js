@@ -53,6 +53,7 @@ export default function Home() {
       <main className={styles.main}>
         <img src="/dog.png" className={styles.icon} />
         <h3>Christmas Gift Ideas 🎁</h3>
+        {!loading && (
         <form onSubmit={onSubmit}>
           <label>For who is the gift?</label>
           <select
@@ -105,6 +106,7 @@ export default function Home() {
           />
           <input type="submit" value="Generate gift ideas" />
         </form>
+        )}
         {loading && (
           <div>
             <h3>Looking for the best gift ideas 🎁 💡</h3>
