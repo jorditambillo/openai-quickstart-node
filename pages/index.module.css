@@ -66,6 +66,7 @@
 .main .result {
   font-weight: bold;
   margin-top: 40px;
+  width: 320px;
 }
 .main .loading {
   width: 50;

@@ -10,6 +10,7 @@ export default function Home() {
   const [hobbies, setHobbies] = useState("");
 
   const [loading, setLoading] = useState(false);
+  const [hideForm, setHideForm] = useState(false);
   const [result, setResult] = useState();
 
   async function onSubmit(event) {
@@ -19,6 +20,7 @@ export default function Home() {
       return;
     }
     setLoading(true);
+    setHideForm(true);
 
     try {
       const response = await fetch("/api/generate-gifts", {
@@ -53,7 +55,7 @@ export default function Home() {
       <main className={styles.main}>
         <img src="/dog.png" className={styles.icon} />
         <h3>Christmas Gift Ideas 🎁</h3>
-        {!loading && (
+        {!hideForm && (
         <form onSubmit={onSubmit}>
           <label>For who is the gift?</label>
           <select
@@ -109,7 +111,7 @@ export default function Home() {
         )}
         {loading && (
           <div>
-            <h3>Looking for the best gift ideas 🎁 💡</h3>
+            <h4>Looking for the best gift ideas💡</h4>
             <img src="/giphy.gif" className={styles.loading} />
           </div>
         )}
