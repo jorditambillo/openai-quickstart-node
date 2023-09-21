@@ -53,8 +53,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <img src="/dog.png" className={styles.icon} />
-        <h3>Christmas Gift Ideas 🎁</h3>
+        <span style={{fontSize: 48 + 'px'}}>🎅</span>
+        <h3>Christmas Gift Ideas</h3>
         {!hideForm && (
         <form onSubmit={onSubmit}>
           <label>For who is the gift?</label>
