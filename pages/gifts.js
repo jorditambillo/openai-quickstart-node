@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>OpenAI Quickstart</title>
+        <title>Christmas Gift Ideas</title>
       </Head>
 
       <main className={styles.main}>
